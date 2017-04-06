@@ -1,0 +1,59 @@
+.center-column {
+    position: relative;
+    margin: 0 215px;
+    padding-bottom: 90px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.title-content-block {
+    margin: 10px 15px;
+    
+    h1 {
+        float: left;
+        font-size: 18px;
+        font-weight: 400;
+        
+        a {
+           border-bottom: 1px solid @link-subline; 
+        }
+    }
+}
+
+.action-block {
+    position: relative;
+        
+    &:after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 14px;
+        right: 14px;
+        height: 1px;
+        background: @content-devider;
+    }
+}
+
+.neew-block {
+    position: relative;
+    margin-top: 20px;
+    
+    &:after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 14px;
+        right: 14px;
+        height: 1px;
+        background: @content-devider;
+    }
+}
+
+.popular-block {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+ 

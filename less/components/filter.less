@@ -1,0 +1,137 @@
+.filter {
+    border: 1px solid @filter-border;
+}
+
+.filter-block {
+    padding: 15px;
+    padding-right: 10px;
+    border-bottom: 1px solid @filter-border;
+    
+    &:last-child {
+        border-bottom: none;
+    }
+    
+    &__title {
+        padding-left: 20px;
+        margin-bottom: 10px;
+        background: url(../img/maket/icn_arrow_up_px.png) 1% center no-repeat;
+        cursor: default;
+        
+        p {
+            font-size: 13px;
+        }
+    }
+    
+    &__list {
+        li {
+            line-height: 20px;
+            font-size: 13px;
+            
+            input {
+                margin-right: 7px;
+                vertical-align: middle;
+            }
+            
+            label {
+                vertical-align: middle;
+            }
+        }
+        
+        &--scroll {
+            height: 150px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            
+        }
+    }
+    
+    &__btns {
+        text-align: center;
+        
+        a {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+               
+        .btn-colored {
+            display: block;
+            padding: 5px 0;
+            background: @btn-back;
+            border: 1px solid @btn-border;
+            border-radius: 5px;
+        }
+    }
+    
+    &__price {
+        
+        .price-input {
+            margin-bottom: 10px;
+        }
+                                
+        span {
+            display: inline-block;
+            border: 1px solid @border-color;
+            width: 80px;
+            padding: 2px;
+            
+            &:first-child {
+                float: left;
+            }
+            
+            &:last-child {
+                float: right;
+            }
+            
+                                    
+            input {
+                border: none;
+                outline: 0;
+                width: 100%;
+                font-size: 12px;
+            }
+                        
+        }
+        
+        .range-controls {
+            height: 3px;
+            background: @price-slide;
+            
+            .ui-slider {
+                position: relative;
+                
+                .ui-slider-range {
+                    background: @logo-color;
+                    height: 3px;
+                    position: absolute;
+                    top: 0;
+                    
+                }
+            }
+            
+            .ui-slider-handle-left {
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background: @price-grey;
+                top: -4px;
+                outline: 0;
+                border: none;
+            }
+            
+            .ui-slider-handle-right {
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background: @price-grey;
+                top: -4px;
+                outline: 0;
+                margin-left: -10px;
+                border: none;
+            }
+            
+        }
+        
+        
+    }
+}

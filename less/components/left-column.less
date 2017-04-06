@@ -1,0 +1,111 @@
+.left-column {
+    position: relative;
+    float: left;
+    width: 215px;
+    margin-bottom: 30px;
+    z-index: 100;
+    
+    &__menu {
+        position: relative;
+        background: #fff;
+        margin-bottom: 20px;
+        top: -41px;
+        z-index: 0;
+        border: 1px solid @border-color;
+        
+        li {
+            font-size: 13px;
+                        
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        
+        a {
+            display: block;
+            padding: 11px;
+            
+            &:hover {
+                
+            }
+        }
+        
+        &--fix {
+            position: absolute;
+            width: 215px;
+            top: 100%;
+            background: #fff;
+            border-radius: 0;
+            border: 1px solid @border-color;
+            border-top: none;
+            
+            a:hover {
+                background: @header-back;
+            }
+        }
+        
+        &--fix-ext {
+            background: @header-back;
+            
+            a {
+                padding-left: 30px;
+            }
+            
+            a.catalog {
+                background: url(../img/maket/icn_doc.png) 5% 40% no-repeat;
+            }
+            
+            a.pricelist {
+                background: url(../img/maket/icn_lines.png) 5% 45% no-repeat;
+            }
+        }
+        
+        &--drop {
+            position: absolute;
+            width: 215px;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            z-index: 999;
+            box-shadow: 0 5px 10px @menu-shadow;
+        }
+    }
+    
+    &__dropdown {
+        background: url(../img/icons/icn_arr_right_red.png) 94% center no-repeat;
+        
+        &:hover {
+            
+        }
+        
+        &:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    
+    &__active {
+        font-weight: 600;
+    }
+    
+    &__onelist {
+        border-top: 1px solid @border-color;
+        a {
+            padding-left: 40px;
+            background: url(../img/icons/icn_list.png) 5% 45% no-repeat;
+            span {
+                border-bottom: 1px solid @link-subline;
+            }
+        }
+    }
+    
+    &__pricelist {
+        a {
+            padding-left: 40px;
+            background: url(../img/icons/icn_doc.png) 5% 40% no-repeat;
+            span {
+                border-bottom: 1px solid @link-subline;
+            }
+        }
+    }
+}

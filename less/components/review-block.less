@@ -1,0 +1,49 @@
+.review-block {
+    margin-bottom: 30px;
+       
+    &__title {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        
+        a {
+            border-bottom: 1px solid @link-subline;
+        }
+    }
+    
+    &__item {
+        margin-bottom: 20px;
+        
+        img {
+            margin-bottom: 10px;
+        }
+        
+        p {
+            font-size: 12px; 
+            margin-bottom: 8px;
+            
+            a {
+                border-bottom: 1px solid @link-subline; 
+                font-size: 13px;
+            }
+        }
+    }
+        
+    &__social {
+        color: @news-grey;
+        
+        span {
+            padding-left: 20px;
+            
+            &:first-child {
+                margin-right: 10px;
+                margin-left: 10px;
+                background: url(../img/icons/icn_comment.png) left 40% no-repeat;
+            }
+            
+            &:last-child {
+                background: url(../img/icons/icn_view.png) left 40% no-repeat;
+            }
+        }
+    }
+}

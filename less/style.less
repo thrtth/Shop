@@ -1,0 +1,249 @@
+/* ==========================================================================
+    Base styles: opinionated defaults
+   ========================================================================== */
+html {
+    color: #222;
+    font-size: 62.5%;
+    line-height: 1.4;
+} 
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio, canvas, iframe, img, svg, video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Model
+   ========================================================================== */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+/* Allgemeines */
+h1, h2, h3, h4, h5, h6, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 14px;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    background: url(../img/backgrounds/hover.png);
+    text-align: center;
+}
+.browserupgrade div {
+    top: 50%;
+    left: 50%;
+    margin: -75px 0 0 -320px;
+    background: #fff;
+    color: #222;
+    width: 640px;
+    height: 150px;
+    position: absolute;
+}
+.browserupgrade div .f {
+    padding: 10px 0;
+    font-size: 20px;
+}
+.browserupgrade div .s {
+    padding: 0;
+    font-size: 18px;
+}
+
+/* ==========================================================================
+    Main
+   ========================================================================== */
+
+@-ms-viewport {
+    width: device-width;
+}
+  
+@viewport {
+    width: device-width;
+}
+
+body {
+    background: @body-back;
+}
+
+.wrap {
+    background: #fff;
+    max-width: 1410px;
+    min-width: 1008px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px @body-shadow;
+}
+
+.main {
+    padding: 0 30px;
+}
+
+
+@import "variables";
+@import "less/components/header";
+@import "less/components/left-column";
+@import "less/components/dropdown-menu";
+@import "less/components/center";
+@import "less/components/content";
+@import "less/components/btn";
+@import "less/components/right-column";
+@import "less/components/news-block";
+@import "less/components/review-block";
+@import "less/components/category";
+@import "less/components/breadcrumbs";
+@import "less/components/need-help";
+@import "less/components/catalog";
+@import "less/components/footer";
+@import "less/components/subcategory";
+@import "less/components/card";
+@import "less/components/filter";
+@import "less/components/flag";
+@import "less/components/some-blocks";
+@import "less/components/paginator";
+@import "less/components/carousel";
+
+@import "less/components/modal";
+@import "less/components/media";
+
+
+
+
+
+
+
+
+/* ==========================================================================
+    Helpers
+   ========================================================================== */
+.hidden {
+  display: none !important;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix:before, .clearfix:after, 
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after, .row:after {
+  clear: both;
+}
+
+input:focus {
+  border: none;
+}
+
+/* ==========================================================================
+    
+   ========================================================================== */
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) { }
+
+/* ==========================================================================
+    Print styles.
+   ========================================================================== */
+@media print {
+    *, *:before, *:after, *:first-letter, *:first-line { background: transparent !important; color: #000 !important; box-shadow: none !important; text-shadow: none !important; }
+    a, a:visited { text-decoration: underline; }
+    a[href]:after { content: " (" attr(href) ")"; }
+    abbr[title]:after { content: " (" attr(title) ")"; }
+    a[href^="#"]:after, a[href^="javascript:"]:after { content: ""; }
+
+    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+    thead { display: table-header-group; }
+    tr, img { page-break-inside: avoid; }
+    img { max-width: 100% !important; }
+
+    p, h2, h3 { orphans: 3; widows: 3; }
+    h2, h3 { page-break-after: avoid; }
+}

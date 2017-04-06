@@ -1,0 +1,56 @@
+.catalog-one-list {
+    padding: 0 30px;
+    margin-bottom: 50px;
+    
+    h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+}
+
+.catalog-column {
+    float: left;
+    width: 33.3333333%;
+    padding-right: 30px;
+}
+
+.catalog-section {
+    margin-bottom: 20px;
+        
+    &__title {
+       margin-bottom: 15px;
+        
+        & > a {
+            display: inline-block;
+            float: left;
+            margin-right: 10px;
+        }
+        
+        h2 {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            margin-left: 60px;
+            
+            a {
+                border-bottom: 1px solid @link-subline;
+            }
+        }
+      
+    }
+    
+    &__text {
+                
+        li {
+            display: inline;
+                        
+            a {
+                font-size: 13px;
+                margin-right: 10px;
+                line-height: 25px;
+                border-bottom: 1px solid @link-subline;
+            }
+        }
+    }
+}

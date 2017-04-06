@@ -1,0 +1,853 @@
+.card {
+        
+    &__column {
+        float: left;
+        width: 33.3333333%;
+    }
+    
+    &__wrap {
+        padding: 0 30px 30px 30px;
+    }
+    
+    &__slider {
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+    
+    &__title {
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+    
+    &__code {
+        font-size: 13px;
+        margin-bottom: 10px;
+        
+        span {
+            color: @text-grey;
+            margin-right: 20px;
+        }
+    }
+    
+    img {
+        margin-right: 20px;
+    }
+    
+    &__comment {
+        display: inline-block;
+        color: @text-grey;
+        padding-left: 20px;
+        background: url(../img/maket/icn_comment_big.png) left center no-repeat;
+    }
+    
+    h2 {
+        margin: 20px 0 10px 0;
+        font-size: 14px;
+    }
+    
+    &__text {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    
+    &__spec {
+        margin-bottom: 40px;
+        
+        li {
+            font-size: 13px;
+            line-height: 25px;
+            padding-left: 10px;
+        }
+    }
+        
+    &__social {
+        font-size: 13px;
+        
+        
+        li {
+            display: inline-block;
+                                    
+            a {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-bottom: -5px;
+                margin-right: 3px;
+            }
+            
+            .vk {
+                background: url(../img/maket/icn_vk_small.png);
+            }
+            
+            .fb {
+                background: url(../img/maket/icn_fb_small.png);
+            }
+            
+            .tw {
+                background: url(../img/maket/icn_tw_small.png);
+            }
+            
+            .ok {
+                background: url(../img/maket/icn_ok_small.png);
+            }
+            
+            .mail {
+                background: url(../img/maket/icn_mail_small.png);
+            }
+            
+            .lj {
+                background: url(../img/maket/icn_lj_small.png);
+            }
+            
+            .gp {
+                background: url(../img/maket/icn_gpl_small.png);
+            }
+            
+        }
+    }
+    
+    &__buy {
+        position: relative;
+        border: 1px solid @border-color;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    
+    &__cheeper {
+        position: relative;
+        
+        &:hover .card__popup {
+            display: block;
+        }
+    }
+    
+    &__popup {
+        display: none;
+        position: absolute;
+        width: 250px;
+        background: #fff;
+        border: 1px solid @border-color;
+        padding: 10px;
+        bottom: 0;
+        left: 10px;
+        
+        p {
+            font-size: 13px;
+            margin-bottom: 10px;
+            
+            a {
+                font-size: 13px;
+                border-bottom: 1px solid @link-subline;
+                
+                &:first-child {
+                    margin-right: 10px;
+                }
+                
+                &:last-child {
+                    margin-left: 10px;
+                }
+            }
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        
+        h2 {
+            margin-bottom: 3px;
+            margin-top: 0;
+        }
+    }
+    
+    &__price {
+        font-size: 32px;
+        line-height: 32px;
+        margin: 10px 0;
+    }
+    
+    &__btns {
+        margin: 15px 0;
+                
+        a {
+            display: inline-block;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 13px;
+            width: 160px;
+            padding: 15px 0px;
+            border: 1px solid @logo-color;
+        }
+        
+        &--basket {
+            background: @logo-color;
+            color: #fff;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            
+            span {
+                padding-left: 20px;
+                background: url(../img/maket/icn_basket.png) left center no-repeat;
+            }
+        }
+        
+        &--one {
+            background: @header-back;
+            color: @logo-color;
+        }
+    }
+    
+    &__line {
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    
+    &__wish {
+        padding-left: 20px;
+        background: url(../img/maket/icn_like_black.png) no-repeat;
+        margin-right: 10px;
+    }
+    
+    &__compare {
+        padding-left: 20px;
+        background: url(../img/maket/icn_compare_black.png) no-repeat;
+        white-space: nowrap;
+    }
+    
+    &__avail {
+        border-top: 1px solid @border-color;
+        padding-top: 15px;
+        margin-bottom: 30px;
+        
+        p {
+            font-size: 13px;
+            padding-left: 20px;
+            margin-bottom: 10px;
+                                    
+            a {
+                border-bottom: 1px solid #000;
+                margin-left: 10px;
+            }
+        }
+        
+        &--exist {
+            background: url(../img/maket/icn_check.png) left 1px no-repeat;
+        }
+        
+        &--order {
+            background: url(../img/maket/icn_truck.png) left 1px no-repeat;
+        }
+        
+        &--delivery {
+            background: url(../img/maket/icn_avto.png) left 1px no-repeat;
+        }
+        
+    }
+}
+
+.similar {
+    padding-top: 30px;
+    margin: 0 -30px;
+    background: #fff;
+    
+    h2 {
+        margin-left: 30px;
+        font-size: 18px;
+    }
+}
+
+.to-this {
+    margin: 0 -30px;
+    background: @header-back;
+    padding: 30px 30px;
+    margin-bottom: 20px;
+    
+    h2 {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+}
+
+.to-this-section {
+    margin: 0 -15px;
+}
+
+.product {
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+    
+    &:last-child {
+        .product__wrap:before {
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: -24px;
+            width: 20px;
+            height: 11px;
+            background: url(../img/maket/icn_equal.png);
+        }    
+    }
+    
+    &:first-child {
+        .product__wrap:before {
+            background-image: none;
+        }
+    }
+    
+    &__wrap {
+        position: relative;
+        background: #fff;
+        height: 185px;
+               
+        &:before {
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: -24px;
+            width: 17px;
+            height: 17px;
+            background: url(../img/maket/icn_plus.png);
+        }
+            
+    }
+    
+    &__img {
+        float: left;
+        width: 40%;
+        
+        img {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+    
+    &__text-wrap {
+        height: 90px;
+    }
+    
+    &__text {
+        float: left;
+        width: 60%;
+        margin-top: 20px;
+        padding-right: 20px;
+        
+        &--title {
+            font-size: 13px;
+        }
+        
+        &--cat {
+            font-size: 12px;
+            color: @text-grey;
+        }
+        
+        &--price {
+            margin: 20px 0;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    
+    &__price-wrap {
+        padding: 20px;
+    }
+    
+    &__price {
+        margin-bottom: 20px;
+        
+        &--old-price {
+            text-decoration: line-through;
+        }
+        
+        &--big {
+            font-size: 36px;
+        }
+        
+        &--saving {
+            margin-bottom: 30px;
+        }
+        
+        &--btn {
+            padding: 10px 40px;
+            color: #fff;
+            font-size: 12px;
+            background: @logo-color;
+            border-radius: 5px;
+        }
+    }
+}
+
+.tabs {
+    margin-bottom: 30px;
+    
+    &__name {
+        
+        ul {
+            margin-bottom: 10px;
+        }
+        
+        li {
+            display: inline-block;
+            margin-right: 20px;
+            
+            &.active {
+                font-weight: 600;
+            }
+        }
+    }
+    
+    &__bar {
+        height: 4px;
+        background: @header-back;
+        margin-bottom: 30px;
+    }
+    
+    &__spec {
+        
+    }
+    
+    &__right-column {
+        float: right;
+        width: 324px;
+        
+        & > img {
+            width: 240px;
+        }
+        
+        h2 {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            background: @logo-color;
+            color: #fff;
+            padding: 10px 0;
+            font-size: 13px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .attension {
+            color: @text-grey;
+            font-size: 13px;
+            margin-bottom: 20px;
+            
+            a {
+                color: @text-grey;
+                border-bottom: 1px solid @text-grey;
+                margin: 0 6px;
+            }
+        }
+        
+        .all-comments {
+            margin-bottom: 40px;
+            margin-top: 20px;
+            
+            a {
+                border-bottom: 1px solid #000;
+                font-size: 13px;
+            }
+        }
+    }
+    
+    &__banner {
+        text-align: right;
+    }
+    
+    &__grade-line {
+        margin-bottom: 7px;
+        
+        p {
+            float: left;
+            font-size: 13px;
+            line-height: 20px;
+        }
+        
+        &--img {
+            width: 35%;
+            margin-top: -2px;
+        }
+        
+        &--part {
+            width: 20%;
+            color: @text-grey;
+        }
+        
+        &--comment {
+            width: 45%;
+            
+            a {
+                border-bottom: 1px solid #000;
+            }
+        }
+        
+        &--source {
+            width: 35%;
+            
+            span {
+                color: red;
+            }
+        }
+        
+        .shop {
+            color: @logo-color;
+            font-weight: 600;
+        }
+    }
+    
+    &__table {
+        border-collapse: collapse;
+        margin-right: 340px;
+        
+        tr {
+            &:nth-child(2n) {
+                background: @header-back;
+            }
+        }
+        
+        td {
+            padding: 6px 10px;
+            font-size: 13px;
+        }
+    }
+    
+    &__article-wrap {
+        margin-right: 335px;
+        margin-left: -14px;
+    }
+    
+    &__comments-wrap {
+        margin-right: 350px;
+    }
+    
+    &__recall-wrap {
+        margin-right: 350px;
+    }
+    
+    &__comment-line {
+        margin-bottom: 20px;
+        overflow: hidden;
+        
+        h2 {
+            font-size: 19px;
+            margin-bottom: 30px;
+        }
+    }
+    
+    &__btn {
+        float: left;
+        display: inline-block;
+        background: @logo-color;
+        font-size: 13px;
+        color: #fff;
+        padding: 10px 40px;
+        border-radius: 5px;
+    }
+    
+    &__subscr {
+        margin-top: 10px;
+        float: right;
+        font-size: 13px;
+        color: @text-grey;
+        border-bottom: 1px dotted @text-grey;
+        padding-left: 20px;
+        background: url(../img/maket/icn_letter_small.png) left 1px no-repeat;
+        
+        &--recall {
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+    }
+    
+    &__comment {
+        border-bottom: 1px solid @border-color;
+        margin-bottom: 20px;
+    }
+    
+    &__text {
+        font-size: 13px;
+    }
+    
+    &__caption {
+        position: relative;
+        font-size: 11px;
+        color: @text-grey;
+        margin-bottom: 20px;
+        
+        .reply {
+            margin-left: 10px;
+            color: @text-grey;
+            border-bottom: 1px solid @text-grey;
+        }
+        
+        .share {
+            margin-bottom: -2px;
+            margin-left: 10px;
+            display: inline-block;
+            width: 11px;
+            height: 10px;
+            background: url(../img/maket/icn_share.png) no-repeat;
+        }
+        
+        .tred-control {
+            position: absolute;
+            right: 0;
+            font-size: 11px;
+            padding-right: 10px;
+            color: @text-grey;
+            cursor: default;
+        }
+        
+        .collapse {
+            background: url(../img/maket/icn_arrow_up_fill_small.png) right center no-repeat;
+        }
+        
+        .expand {
+            background: url(../img/maket/icn_arrow_down_fill_small.png) right center no-repeat;
+        }
+    }
+    
+    &__answer {
+        padding-left: 30px;
+    }
+    
+    &__name {
+        margin-bottom: 10px;
+    }
+    
+    &__my-answer {
+        position: relative;
+        padding: 10px;
+        padding-left: 15px;
+        background: @btn-back;
+        margin-bottom: 20px;
+        
+        .name-btn {
+            display: inline-block;
+            font-size: 0;
+            border: 1px solid @logo-color;
+            border-radius: 5px;
+            
+            .active {
+                background: #fff;
+            }
+            
+            a {
+                text-align: center;
+                display: inline-block; 
+                width: 115px;
+                padding: 5px 0;
+                font-size: 13px;
+            } 
+            
+            .my-name {
+                border-right: 1px solid @logo-color;
+                border-radius: 5px 0 0 5px;
+            }
+            
+            .anonym {
+                border-radius: 0 5px 5px 0;
+            }
+        }
+        
+        .close {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            right: 10px;
+            top: 15px;
+            background: url(../img/maket/icn_cross_black.png);
+        }
+        
+        textarea {
+            width: 100%;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        
+        label {
+            display: inline-block;
+            font-size: 13px;
+            vertical-align: middle;
+            margin-bottom: 10px;
+            
+            a {
+                border-bottom: 1px solid #000;
+            }
+            
+            input {
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+        }
+        
+        button {
+            position: absolute;
+            right: 10px;
+            bottom: 15px;
+            background: @logo-color;
+            color: #fff;
+            font-size: 12px;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 15px;
+        }
+        
+        .comment-done {
+            margin: 20px 0;
+            font-size: 13px;
+        }
+        
+    }
+    
+    &__anon {
+        margin-bottom: 20px;
+        
+        p {
+            font-size: 13px;
+            margin-bottom: 5px;
+            
+            span {
+                display: inline-block;
+                width: 150px;
+            }
+        }
+    }
+    
+    &__recall-line {
+        overflow: hidden;
+        margin-bottom: 30px;
+        border: 1px solid @border-color;
+    }
+    
+    &__sort {
+        float: left;
+        display: inline-block;
+        padding: 5px 10px;
+        border-right: 1px solid @border-color;
+    }
+    
+    &__opinion {
+        border-bottom: 1px solid @border-color;
+        margin-bottom: 30px;
+        
+        & > p {
+            margin-bottom: 20px;
+        }
+        
+        .text {
+            display: inline-block;
+            font-size: 13px;
+                        
+            &--bold {
+                font-weight: 600;
+                margin-right: 10px;
+            }
+        }
+    }
+    
+    &__avatar {
+        overflow: hidden;
+        margin-bottom: 20px;
+        
+        img {
+            float: left;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .rating {
+            float: left;
+            
+            &__author {
+                margin-bottom: 10px;
+            }
+            
+            &__text {
+                position: relative;
+                font-size: 12px;
+                color: @text-grey;
+                padding-left: 40px;
+                line-height: 20px;
+                
+                span {
+                    margin-left: 20px;
+                }
+                
+                &:before {
+                    content: "5";
+                    position: absolute;
+                    width: 25px;
+                    height: 20px;
+                    background: #009822;
+                    color: #fff;
+                    text-align: center;
+                    left: 0;
+                }
+                
+                &:after {
+                    position: absolute;
+                    content: "";
+                    left: 25px;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 10px 0 10px 5px;
+                    border-color: transparent transparent transparent #009821;
+                }
+            }
+        }
+    }
+    
+    &__sign {
+        overflow: hidden;
+        margin-bottom: 30px;
+                
+        .date {
+            float: left;
+            font-size: 13px;
+            color: @text-grey;
+            
+            a {
+                margin-left: 5px;
+                border-bottom: 1px solid #000;
+                
+                span {
+                    color: red;
+                }
+            }
+        }
+        
+        .likes {
+            float: right;
+                        
+            .like {
+                color: green;
+                padding-left: 15px;
+                background: url(../img/maket/icn_like_green.png) left center no-repeat;
+            }
+            
+            .dislike {
+                color: red;
+                padding-left: 15px;
+                background: url(../img/maket/icn_dislike.png) left center no-repeat;
+                margin-left: 10px;
+            }
+        }
+    }
+    
+    
+    &__footer {
+        margin-top: 20px;
+    }
+}
+
+    

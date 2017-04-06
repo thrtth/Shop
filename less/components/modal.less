@@ -1,0 +1,287 @@
+.modal-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    z-index: 9999;
+    text-align: center;
+    //white-space: nowrap;
+    
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        width: 0;
+        vertical-align: middle;
+    }
+}
+
+.modal-window {
+    position: relative;
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    padding: 20px;
+    width: 400px;
+    
+    &--big {
+        width: auto;
+        max-width: 1410px;
+        min-width: 740px;
+    }
+    
+    &__close {
+        position: absolute;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url(../img/icons/icn_cross.png);
+        top: 8px;
+        right: 8px;
+    }
+    
+    &__column {
+        float: left;
+        
+        &--50 {
+            width: 50%;
+            
+            a {
+                display: inline-block;
+                padding: 5px 0;
+            }
+        }
+        
+        &--left {
+            width: 70%;
+        }
+        
+        &--right {
+            width: 30%;
+            margin-top: 55px;
+        }
+    
+    }
+    
+    h2 {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    
+    h3 {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+          
+    td {
+        border: 1px solid @border-color;
+        padding: 3px 5px;
+        
+        &:first-child {
+            width: 60%;
+        }
+        
+        &:last-child {
+            width: 40%;
+        }
+    }
+    
+    p {
+        white-space: normal;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    
+    input {
+        width: 100%;
+        margin-bottom: 15px;
+        line-height: 20px;
+    }
+    
+    &__delivery {
+        a {
+            font-size: 13px;
+            border-bottom: 1px solid @link-subline;
+        }
+    }
+    
+    &__quick {
+        
+        p {
+            margin-bottom: 10px;
+        }
+    }
+    
+    &__subscr-recall {
+                
+    }
+    
+    &__subscr-done {
+        
+        a {
+            border-bottom: 1px solid @link-subline;
+        }
+    }
+    
+    &__comment {
+        
+        h2 {
+            padding-right: 20px;
+        }
+    }
+    
+    &__line {
+        margin-bottom: 20px;
+    }
+    
+    &__title {
+        width: 20%;
+    }
+    
+    &__text {
+        width: 80%;
+        padding-right: 20px;
+        
+        textarea {
+            width: 100%;
+            height: 70px;
+            font-size: 13px;
+        }
+        
+        ul {
+            display: inline-block;
+            border: 1px solid @border-color;
+            border-radius: 5px;
+            font-size: 0;
+            margin-top: -5px;
+        }
+        
+        li {
+            display: inline-block;
+            border-right: 1px solid @border-color;
+            background: @btn-back;
+            
+            a {
+                display: inline-block;
+                font-size: 13px;
+                padding: 0 5px;
+                line-height: 30px;
+            }
+            
+            &:last-child {
+                border-right: none;        
+            }
+        }
+        
+        span {
+            margin-left: 20px;
+            font-size: 13px;
+            
+            a {
+                display: inline-block;
+                vertical-align: middle;
+                height: 30px;
+                width: 25px;
+                border: 1px solid @border-color;
+                border-radius: 5px;
+                background: @btn-back;
+                margin: 0 5px;
+                
+                &:first-child {
+                    background: @btn-back url(../img/maket/icn_fb_small_black.png) center center no-repeat;
+                }
+                
+                &:last-child {
+                    background: @btn-back url(../img/maket/icn_vk_small_black.png) center center no-repeat;
+                }
+            }
+        }
+    }
+    
+    &__check {
+        
+        li {
+            line-height: 30px;
+            padding-left: 10px;
+            
+            a {
+                border-bottom: 1px solid @link-subline;
+            }
+        }
+        
+        h3 {
+            margin-top: 30px;
+            font-size: 15px;
+        }
+        
+        .social {
+            margin-bottom: 20px;
+            
+            li {
+                display: inline-block;
+                padding-left: 0;
+                margin-right: 10px;
+                
+                a {
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid @border-color;
+                    border-radius: 5px;
+                    
+                    &.fb-icon {
+                        background: url(../img/maket/icn_fb_black.png) center center no-repeat;
+                    }
+                    
+                    &.vk-icon {
+                        background: url(../img/maket/icn_vk_black.png) center center no-repeat;
+                    }
+                    
+                    &.ok-icon {
+                        background: url(../img/maket/icn_ok_black.png) center center no-repeat;
+                    }
+                    
+                    &.tw-icon {
+                        background: url(../img/maket/icn_tw_black.png) center center no-repeat;
+                    }
+                    
+                    &.mail-icon {
+                        background: url(../img/maket/icn_mail_black.png) center center no-repeat;
+                    }
+                    
+                    &.gpl-icon {
+                        background: url(../img/maket/icn_gpl_black.png) center center no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-btn {
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    background: @logo-color;
+    color: #fff;
+    font-size: 13px;
+    
+    &--big {
+        width: 20%;
+        margin-left: 14%;
+    }
+    
+    &--left {
+        width: 40%;
+    }
+}
